@@ -1,0 +1,9 @@
+{
+  "name": "Meet Redirector",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions":["https://aula-digital.plurall.net/hangouts/*","webRequest","webRequestBlocking","tabs"]
+}
