@@ -5,5 +5,5 @@
   "background": {
     "scripts": ["background.js"]
   },
-  "permissions":["https://aula-digital.plurall.net/hangouts/*","webRequest","webRequestBlocking","tabs", "clipboardWrite"]
+  "permissions":["https://aula-digital.plurall.net/hangouts/*","https://meet.google.com/*","webRequest","webRequestBlocking","tabs", "clipboardWrite"]
 }
