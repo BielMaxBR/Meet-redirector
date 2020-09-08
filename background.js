@@ -5,13 +5,17 @@ chrome.webRequest.onHeadersReceived.addListener(function (details) {
     if (details.url.indexOf('aula') != -1) {
       console.log(details)
       _redirectUrl = details.url.substring(48);
-      copyTextToClipboard(_redirectUrl)
+      // copyTextToClipboard(_redirectUrl)
       return { redirectUrl: _redirectUrl /*Redirection URL*/ };
     }
     else if ( details.url.substring(36) == "" ){
       console.log(details)
       _redirectUrl = details.url;
-      copyTextToClipboard(_redirectUrl)
+      // copyTextToClipboard(_redirectUrl)
+    }
+
+    if (details.url.substring(0,12) == "https://meet" && details.url.lenth <= 36) {
+      copyTextToClipboard(details.url)
     }
   }
 }, {
